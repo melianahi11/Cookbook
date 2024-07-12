@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Sauce Vault</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">Secret Sauce Vault</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Favorites</a>
+                <a href="#">Unattempted</a>
+                <a href="#">All Recipes</a>
+                <a href="#" id="sidebarToggle">Add New Recipe</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>Welcome</h1>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="" alt="R1">
+                <div class="caption">Recipe 1</div>
+            </div>
+            <div class="slide fade">
+                <img src="" alt="R2">
+                <div class="caption">Recipe 2</div>
+            </div>
+            <div class="slide fade">
+                <img src="" alt="R3">
+                <div class="caption">Recipe 3</div>
+            </div>
+            <div class="slide fade">
+                <img src="" alt="R4">
+                <div class="caption">Recipe 4</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <h2>Add New Recipe</h2>
+            <form>
+                <label for="recipe-name" name="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name">
+
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients"></textarea>
+
+                <label for="directions">Directions:</label>
+                <textarea id="directions" name="directions"></textarea>
+
+                <button type="submit">Save Recipe</button>
+            </form>
+        </div>
+    </div>
+    <script src="sigh.js"></script>
+</body>
+</html>
